@@ -1,0 +1,19 @@
+// bower:scss
+// Bower Sass dependencies will be imported here after Gulp `styles` task.
+// endbower
+
+body,h1,h2,h3,h4,h5,h6,p { margin: 0; }
+
+body {
+    font: 500 16px/150% Arial, Helvetica, sans-serif;
+}
+
+.app-header {
+    padding: 30px;
+    background: #63b;
+    color: #fff;
+}
+
+// inject
+// Input styles will be imported here after Gulp `styles` task.
+// endinject

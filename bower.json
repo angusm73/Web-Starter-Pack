@@ -1,0 +1,25 @@
+{
+    "name": "@angus/angular-starter-pack",
+    "description": "Clean but full featured AngularJS boilerplate using Gulp workflow and best practicies",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/angusm73/Web-Starter-Pack.git"
+    },
+    "keywords": [
+        "angularjs",
+        "boilerplate"
+    ],
+    "author": "Angus Moore <angus@ulladullawebdesign.com> (https://ulladullaweb.design)",
+    "license": "MIT",
+    "homepage": "https://github.com/angusm73/Web-Starter-Pack",
+    "dependencies": {
+        "angular": "^1.6.9",
+        "angular-dynamic-locale": "^0.1.32",
+        "angular-i18n": "^1.6.9",
+        "angular-translate": "^2.17.0",
+        "angular-translate-handler-log": "^2.17.0",
+        "angular-translate-loader-static-files": "^2.17.0",
+        "angular-ui-router": "^1.0.15",
+        "normalize-css": "^8.0.0"
+    }
+}

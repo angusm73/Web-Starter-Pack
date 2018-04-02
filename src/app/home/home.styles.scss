@@ -1,0 +1,17 @@
+home {
+    display: block;
+    padding: 10px;
+    background: #392;
+    color: #FFF;
+    text-align: center;
+
+    .lang-switcher {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+    h1, h2 {
+        margin-bottom: .5em;
+    }
+}
