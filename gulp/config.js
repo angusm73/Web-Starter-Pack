@@ -51,6 +51,7 @@ config.patterns = {
 config.paths = {
     angularTemplatecache: 'templateCacheHtml.js',
     app: 'src/app',
+    assets: 'src/assets',
     dist: 'dist',
     fonts: 'dist/fonts',
     maps: 'maps',
@@ -137,7 +138,7 @@ config.plugins.wiredep = {
  */
 config.entry = {
     html: path.join(config.paths.src, '/index.html'),
-    styles: path.join(config.paths.app, '/index.scss'),
+    styles: path.join(config.paths.app, '/assets/index.scss'),
 };
 
 module.exports = config;

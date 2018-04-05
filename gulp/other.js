@@ -19,6 +19,7 @@ gulp.task('other', function() {
     // Gather all files...
         path.join(config.paths.src, '/**/*'),
         path.join(config.paths.src, '/**/.*'),
+        path.join(config.paths.src, '/styles.scss'),
         // excluding HTML entry, locales and "excluded" obviously.
         '!' + config.entry.html,
         path.join('!' + config.paths.app, '/', config.patterns.locales),

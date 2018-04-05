@@ -13,7 +13,7 @@ var utils = require('./utils');
  * Inject scripts and styles into HTML entry.
  * @gulptask inject
  */
-gulp.task('inject', [ 'scripts', 'styles' ], function() {
+gulp.task('inject', ['scripts', 'styles'], function() {
     var injectScripts = gulp.src(
         path.join(config.paths.app, '/', config.patterns.scripts)
     )
@@ -22,6 +22,10 @@ gulp.task('inject', [ 'scripts', 'styles' ], function() {
 
     var injectStyles = gulp.src(
         path.join(config.paths.serve, '/', config.patterns.stylesOutput),
+        { read: false }
+    );
+    var rootStyles = gulp.src(
+        path.join(config.paths.serve, '/styles.css'),
         { read: false }
     );
 
@@ -36,6 +40,7 @@ gulp.task('inject', [ 'scripts', 'styles' ], function() {
     return gulp.src(config.entry.html)
         .pipe($.inject(injectScripts, injectOptions))
         .pipe($.inject(injectStyles, injectOptions))
+        .pipe($.inject(rootStyles, injectOptions))
         .pipe(wiredep(config.plugins.wiredep))
         .pipe(gulp.dest(config.paths.serve));
 });
@@ -44,6 +49,6 @@ gulp.task('inject', [ 'scripts', 'styles' ], function() {
  * Start `inject` task and launch Browsersync reloading after.
  * @gulptask inject:reload
  */
-gulp.task('inject:reload', [ 'inject' ], function() {
+gulp.task('inject:reload', ['inject'], function() {
     browserSync.reload();
 });

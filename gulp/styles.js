@@ -33,6 +33,7 @@ function buildStyles() {
     var injectStyles = gulp.src(
         [
             path.join(config.paths.app, '/', config.patterns.stylesInput),
+            path.join(config.paths.src, '/styles.scss'),
             '!' + config.entry.styles,
         ],
         { read: false }

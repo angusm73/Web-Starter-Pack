@@ -1,53 +1,22 @@
-<!DOCTYPE html>
-<html ng-app="app">
+<!doctype html>
+<html lang="en">
 
 <head>
     <base href="/">
     <meta charset="utf-8">
     <title>Web Starter Pack</title>
 
-    <!-- build:css(src) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- Bower dependencies styles will go here after Gulp `inject` task. -->
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:css(.tmp/serve) styles/app.css -->
-    <!-- inject:css -->
-    <!-- Output styles will go here after Gulp `inject` task. -->
-    <!-- endinject -->
-    <!-- endbuild -->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
-
     <div class="wrapper">
         <header class="app-header">
             <h1>Module Demo</h1>
         </header>
-
-        <div ui-view=""></div>
+        <app></app>
     </div>
-
-    <!-- build:js(src) scripts/vendor.js -->
-    <!-- bower:js -->
-    <!-- Bower dependencies scripts will go here after Gulp `inject` task. -->
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:js({src,.tmp/partials}) scripts/app.js -->
-
-    <!-- inject:js -->
-    <!-- Scripts will go here after Gulp `inject` task. -->
-    <!-- endinject -->
-
-    <!-- inject:partials -->
-    <!-- Angular templates will be converted to scripts and go here after Gulp `build` task. -->
-    <!-- endinject -->
-
-    <!-- endbuild -->
-
 </body>
 
 </html>
