@@ -1,9 +1,11 @@
 home {
+    position: relative;
     display: block;
-    padding: 10px;
-    background: #392;
-    color: #FFF;
-    text-align: center;
+    padding: 30px;
+    background: #F4F4F4;
+    border: 2px solid #CCC;
+    border-top: 0;
+    color: #323232;
 
     .lang-switcher {
         position: absolute;
