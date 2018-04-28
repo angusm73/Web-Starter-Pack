@@ -90,11 +90,9 @@ import { AppState } from './app.service';
 
     <main class="app-content">
         <router-outlet></router-outlet>
-    </main>` +
+    </main>
 
-        // <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
-
-    `<footer class="app-footer">
+    <footer class="app-footer">
         <span>Angular Starter by <a [href]="github">@angusm73</a></span>
         <a [href]="url" class="logo">
             <img [src]="image" [alt]="name">
