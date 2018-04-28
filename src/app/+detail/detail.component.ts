@@ -1,6 +1,6 @@
 import {
-  Component,
-  OnInit,
+    Component,
+    OnInit,
 } from '@angular/core';
 /**
  * We're loading this component asynchronously
@@ -8,11 +8,11 @@ import {
  * see https://github.com/gdi2290/es6-promise-loader for more info
  */
 
-console.log('`Detail` component loaded asynchronously');
+console.log( '`Detail` component loaded asynchronously' );
 
-@Component({
-  selector: 'detail',
-  template: `
+@Component( {
+    selector: 'detail',
+    template: `
     <h1>Hello from Detail</h1>
     <span>
       <a [routerLink]=" ['./child-detail'] ">
@@ -21,11 +21,11 @@ console.log('`Detail` component loaded asynchronously');
     </span>
     <router-outlet></router-outlet>
   `,
-})
+} )
 export class DetailComponent implements OnInit {
 
-  public ngOnInit() {
-    console.log('hello `Detail` component');
-  }
+    public ngOnInit() {
+        console.log( 'hello `Detail` component' );
+    }
 
 }

@@ -1,8 +1,95 @@
-html, body{
-  height: 100%;
-  font-family: Arial, Helvetica, sans-serif
+/* App layout */
+app {
+    display: grid;
+    grid-template: "nav content" "footer footer";
+    grid-template-columns: 300px auto;
 }
 
-a.active {
-  background-color: gray;
+
+
+/* Navigation */
+.app-nav {
+    grid-area: nav;
+    background-color: #E0E0E0;
+}
+
+.app-nav h2 {
+    margin-bottom: 15px;
+    padding: 0 5%;
+    line-height: 100px;
+    background-color: #111;
+    color: #FFF;
+}
+.app-nav h3 {
+    padding: .5em 5%;
+}
+
+.app-nav a {
+    display: block;
+    padding: 8px 5%;
+    color: #454545;
+    text-decoration: none;
+    transition: .1s ease-in-out;
+}
+.app-nav a:hover {
+    background-color: #C0C0C0;
+    color: #222;
+}
+.app-nav a:active {
+    background-color: #A0A0A0;
+    color: #000;
+}
+.app-nav a:last-child {
+    margin-bottom: 0;
+}
+.app-nav a.active {
+    background-color: gray;
+}
+
+.app-nav div {
+    padding-bottom: 15px;
+}
+.app-nav div a {
+    padding-left: 10%;
+}
+
+
+
+/* Main content */
+main.app-content {
+    grid-area: content;
+    padding: 30px;
+}
+
+
+
+/* Footer */
+.app-footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px calc(50vw - 600px);
+    background: #ECECEC;
+}
+.app-footer .logo {
+    display: block;
+    width: 160px;
+}
+.app-footer .logo img {
+    display: block;
+    width: 100%;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1320px) {
+    .app-footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }

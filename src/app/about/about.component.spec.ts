@@ -7,35 +7,35 @@ import { inject, TestBed } from '@angular/core/testing';
  */
 import { AboutComponent } from './about.component';
 
-describe('About', () => {
-  /**
-   * Provide our implementations or mocks to the dependency injector
-   */
-  beforeEach(() => TestBed.configureTestingModule({
-    providers: [
-      /**
-       * Provide a better mock.
-       */
-      {
-        provide: ActivatedRoute,
-        useValue: {
-          data: {
-            subscribe: (fn: (value: Data) => void) => fn({
-              yourData: 'yolo'
-            })
-          }
-        }
-      },
-      AboutComponent
-    ]
-  }));
+describe( 'About', () => {
+    /**
+     * Provide our implementations or mocks to the dependency injector
+     */
+    beforeEach( () => TestBed.configureTestingModule( {
+        providers: [
+            /**
+             * Provide a better mock.
+             */
+            {
+                provide: ActivatedRoute,
+                useValue: {
+                    data: {
+                        subscribe: ( fn: ( value: Data ) => void ) => fn( {
+                            yourData: 'yolo'
+                        } )
+                    }
+                }
+            },
+            AboutComponent
+        ]
+    } ) );
 
-  it('should log ngOnInit', inject([AboutComponent], (about: AboutComponent) => {
-    spyOn(console, 'log');
-    expect(console.log).not.toHaveBeenCalled();
+    it( 'should log ngOnInit', inject( [ AboutComponent ], ( about: AboutComponent ) => {
+        spyOn( console, 'log' );
+        expect( console.log ).not.toHaveBeenCalled();
 
-    about.ngOnInit();
-    expect(console.log).toHaveBeenCalled();
-  }));
+        about.ngOnInit();
+        expect( console.log ).toHaveBeenCalled();
+    } ) );
 
-});
+} );

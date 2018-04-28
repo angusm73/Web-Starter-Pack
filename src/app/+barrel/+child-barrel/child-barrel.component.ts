@@ -1,6 +1,6 @@
 import {
-  Component,
-  OnInit,
+    Component,
+    OnInit,
 } from '@angular/core';
 /**
  * We're loading this component asynchronously
@@ -8,18 +8,18 @@ import {
  * see https://github.com/gdi2290/es6-promise-loader for more info
  */
 
-console.log('`ChildBarrel` component loaded asynchronously');
+console.log( '`ChildBarrel` component loaded asynchronously' );
 
-@Component({
-  selector: 'child-barrel',
-  template: `
+@Component( {
+    selector: 'child-barrel',
+    template: `
     <h1>Hello from Child Barrel</h1>
   `,
-})
+} )
 export class ChildBarrelComponent implements OnInit {
 
-  public ngOnInit() {
-    console.log('hello `ChildBarrel` component');
-  }
+    public ngOnInit() {
+        console.log( 'hello `ChildBarrel` component' );
+    }
 
 }

@@ -70,10 +70,10 @@ import 'zone.js/dist/zone';
  * Need to import at least one locale-data with intl.
  */
 // import 'intl/locale-data/jsonp/en';
-if ('production' === ENV) {
-  // Production
+if ( 'production' === ENV ) {
+    // Production
 
 } else {
 
-  // Development
+    // Development
 }

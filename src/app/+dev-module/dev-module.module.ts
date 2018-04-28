@@ -9,16 +9,16 @@ import { DevModuleComponent } from './dev-module.component';
       Don't leave side-effects outside of classes so this will tree-shake nicely on prod
       e.g. `console.log('something')` is a side effect.
 */
-@NgModule({
-  declarations: [DevModuleComponent],
-  imports: [
-    CommonModule,
-    RouterModule.forChild(routes),
-  ],
-})
+@NgModule( {
+    declarations: [ DevModuleComponent ],
+    imports: [
+        CommonModule,
+        RouterModule.forChild( routes ),
+    ],
+} )
 export class DevModuleModule {
-  public static routes = routes;
-  constructor() {
-    console.log('`DevModuleModule` module initialized');
-  }
+    public static routes = routes;
+    constructor() {
+        console.log( '`DevModuleModule` module initialized' );
+    }
 }
